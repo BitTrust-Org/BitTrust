@@ -19,10 +19,10 @@ Once the user enters the corresponding amount, its currency and ask/bid, we now 
 # Bitfinex (API):
 Bitfinex API continously relays information about their orderbook table. The data flow is nearly 20,000 data points per second. However, the data response is in JSON format we had to convert it into a format so that we could store it in sqlite database. We did JSON Parsing. Alon with it there were multiple values we need to take care of sometimes an error bit "hb" is sent by Bitfinex, we made sure to get rid of these values. We have used Websocket connection for Handling taking data from Bitfinex.
 
-# GDAX(API):
-GDax is pretty prompt in sending data. Just for a comparision we receive nearly 30,000 data points per second. Again the data is in JSON. We performed JSON Parsing. The amount portion of the returned values (tuples) needs to be checked if it was -ve it meant ask and if +ve it meant bid. We need to clean and perform these operation as ameasure to clean the data
+# BitStamp(API):
+BitStamo is pretty prompt in sending data. Just for a comparision we receive nearly 30,000 data points per second. Again the data is in JSON. We performed JSON Parsing. The amount portion of the returned values (tuples) needs to be checked if it was -ve it meant ask and if +ve it meant bid. We need to clean and perform these operation as ameasure to clean the data
  
-We have merged data from the bitfinex and GDAX API, to make our analysis accurate and better.
+We have merged data from the bitfinex and bitstamp API, to make our analysis accurate and better.
 
 # Note
 All the three 3 API send data continuously, This data is stored in SQLite Database and would we continuously relay it with each request/update.
