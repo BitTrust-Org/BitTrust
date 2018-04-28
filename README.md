@@ -1,3 +1,15 @@
+# Steps to execute
+0. be in a empty directory {let's say /myAwesomeProject}
+1. git init
+2. git pull https://github.com/BitTrust-Org/BitTrust.git
+3. cd env\scripts
+4. activate
+5. cd..
+6. cd..
+Catution: make sure you are in the /myAwesomeProject directory
+7. pip install -r requirements.txt
+8. python main.py
+
 # BitcoinPredict (API)
 When the user enters our web page, he will see the previous 28 hours(1680 minutes) of bitcoin prices in USD. It also shows the trend in the data, if it is increasing or decreasing.
 Based on this data, we will predict if the user should buy or sell bitcoins.
