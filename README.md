@@ -1,12 +1,12 @@
 # Steps to execute
-0. be in a empty directory {let's say /myAwesomeProject}
+0. In command prompt navigate to an empty directory {let's say /bittrade}
 1. git init
 2. git pull https://github.com/BitTrust-Org/BitTrust.git
 3. cd env\scripts
 4. activate
 5. cd..
 6. cd..
-Catution: make sure you are in the /myAwesomeProject directory
+Catution: make sure you are in the /bittrade directory
 7. pip install -r requirements.txt
 8. python main.py
 
